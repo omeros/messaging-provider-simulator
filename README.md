@@ -12,7 +12,7 @@ It demonstrates integration patterns such as **provider abstraction**, **async w
 
 ## Features
 
-### Backend (Node.js / Express)
+### Server (Node.js / Express)
 - `POST /messages/send`  
   Creates a message and triggers async sending via a provider abstraction.
 - `GET /messages`  
