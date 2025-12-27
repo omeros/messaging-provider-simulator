@@ -34,3 +34,13 @@ It demonstrates integration patterns such as **provider abstraction**, **async w
 ---
 
 ## Project Structure (example)
+client/
+  src/
+    pages/
+    components/
+    services/
+server/
+  routes/
+  controllers/
+  services/
+  providers/
