@@ -30,8 +30,7 @@ It demonstrates integration patterns such as **provider abstraction**, **async w
 ### Frontend (React)
 - **Home page:** basic navigation
 - **Send page:** form to send a message
-- **Messages page:** list messages + status (manual refresh / optional polling)
-
+- **Messages page:** list messages + status, with auto-refresh (polling) without UI flicker/layout shift
 ---
 
 ## Project Structure (example)
