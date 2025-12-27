@@ -27,7 +27,7 @@ It demonstrates integration patterns such as **provider abstraction**, **async w
 - **Idempotency:** repeated requests with the same `Idempotency-Key` are processed only once (no duplicates)
 - Console logging on status changes (e.g. `pending → sending → sent/failed`)
 
-### Frontend (React)
+### Client (React)
 - **Home page:** basic navigation
 - **Send page:** form to send a message
 - **Messages page:** list messages + status, with auto-refresh (polling).
