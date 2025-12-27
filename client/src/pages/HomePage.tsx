@@ -28,14 +28,14 @@ export default function HomePage() {
             <p className="text-sm font-medium text-slate-800">Quick start</p>
             <div className="mt-2 grid gap-2 sm:grid-cols-2">
             <div className="rounded-lg bg-white p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Backend</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Server</p>
                 <p className="mt-1 font-mono text-xs text-slate-700">
                 cd server && npm i && npm start
                 </p>
                 <p className="mt-1 text-xs text-slate-500">Runs on :3001</p>
             </div>
             <div className="rounded-lg bg-white p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Frontend</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Client</p>
                 <p className="mt-1 font-mono text-xs text-slate-700">
                 cd client && npm i && npm run dev
                 </p>
