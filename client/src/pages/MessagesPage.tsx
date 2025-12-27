@@ -24,13 +24,13 @@ export default function MessagesPage() {
         setError(null);
         setLoading(true);
         try {
-        const data = await getMessages();
-        // newest first
-        setMessages([...data].sort((a, b) => b.createdAt.localeCompare(a.createdAt)));
+            const data = await getMessages();
+            // newest first
+            setMessages([...data].sort((a, b) => b.createdAt.localeCompare(a.createdAt)));
         } catch (err: any) {
-        setError(err?.message ?? "Failed to load messages");
+            setError(err?.message ?? "Failed to load messages");
         } finally {
-        setLoading(false);
+            setLoading(false);
         }
     }
     useEffect(() => {
@@ -40,30 +40,24 @@ export default function MessagesPage() {
         <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
         <div className="flex items-center justify-between gap-3">
             <div>
-            <h1 className="text-xl font-semibold text-slate-900">Messages</h1>
-            <p className="mt-1 text-sm text-slate-600">In-memory list from the backend.</p>
+                <h1 className="text-xl font-semibold text-slate-900">Messages</h1>
+                <p className="mt-1 text-sm text-slate-600">In-memory list from the backend.</p>
             </div>
-            <button
-            onClick={load}
-            disabled={loading}
-            className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50 disabled:opacity-60"
-            >
-            {loading ? "Refreshing..." : "Refresh"}
-            </button>
+            <button onClick={load} disabled={loading} className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50 disabled:opacity-60">{loading ? "Refreshing..." : "Refresh"}</button>
         </div>
         {error && (
             <div className="mt-4 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
-            {error}
+                {error}
             </div>
         )}
         <div className="mt-4 overflow-hidden rounded-lg border border-slate-200">
             <table className="w-full text-left text-sm">
             <thead className="bg-slate-50 text-slate-700">
                 <tr>
-                <th className="px-3 py-2">To</th>
-                <th className="px-3 py-2">Content</th>
-                <th className="px-3 py-2">Status</th>
-                <th className="px-3 py-2">Created</th>
+                    <th className="px-3 py-2">To</th>
+                    <th className="px-3 py-2">Content</th>
+                    <th className="px-3 py-2">Status</th>
+                    <th className="px-3 py-2">Created</th>
                 </tr>
             </thead>
             <tbody>

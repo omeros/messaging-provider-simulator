@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const {MessageController}  = require ('../controllers/messageController')
+const MessageController  = require ('../controllers/messageController')
 
 
 // GET  

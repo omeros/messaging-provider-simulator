@@ -12,6 +12,8 @@ class MessageController {
   }
 
   sendMessage(req,res){
+    console.log('sendMessage function');
+    
     const idempotencyKey = req.header("Idempotency-Key"); // or req.body.requestId
     const { to, content } = req.body;
     if (!to || !content) {
