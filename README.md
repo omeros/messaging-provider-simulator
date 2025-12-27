@@ -39,6 +39,7 @@ client/
     pages/
     components/
     services/
+    
 server/
   routes/
   controllers/
