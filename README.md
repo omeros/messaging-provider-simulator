@@ -34,7 +34,7 @@ It demonstrates integration patterns such as **provider abstraction**, **async w
 ---
 
 ## Project Structure
-client/
+client/   
   src/
     pages/
     components/
