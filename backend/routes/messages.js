@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-const MessageController  = require ('../controllers/messageController')
+const { messageController } = require("../controllers");
 
 
 // GET  
-router.get("/", (req, res) => MessageController.getMessages(req, res));
+router.get("/", (req, res) => messageController.getMessages(req, res));
 
 // POST
-router.post('/send', (req, res) => MessageController.sendMessage(req, res));
+router.post('/send', (req, res) => messageController.sendMessage(req, res));
 
 
 

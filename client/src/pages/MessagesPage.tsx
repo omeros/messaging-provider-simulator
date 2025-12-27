@@ -35,6 +35,8 @@ export default function MessagesPage() {
     }
     useEffect(() => {
         load();
+        const id = setInterval(load, 1000);
+        return () => clearInterval(id); 
     }, []);
     return (
         <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
