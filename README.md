@@ -33,7 +33,7 @@ It demonstrates integration patterns such as **provider abstraction**, **async w
 - **Messages page:** list messages + status, with auto-refresh (polling).
 ---
 
-## Project Structure (example)
+## Project Structure
 client/
   src/
     pages/
