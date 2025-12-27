@@ -80,7 +80,7 @@ export default function MessagesPage() {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
             <h1 className="text-xl font-semibold text-slate-900">Messages</h1>
-            <p className="mt-1 text-sm text-slate-600">In-memory list from the backend.</p>
+            <p className="mt-1 text-sm text-slate-600">In-memory list from the server.</p>
             </div>
             <div className="flex items-center gap-3">
                 <label className="flex items-center gap-2 text-sm text-slate-700">
