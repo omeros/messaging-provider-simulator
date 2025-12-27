@@ -12,7 +12,7 @@ It demonstrates integration patterns such as **provider abstraction**, **async w
 
 ## Features
 
-### Backend (Node.js / Express)
+### Server (Node.js / Express)
 - `POST /messages/send`  
   Creates a message and triggers async sending via a provider abstraction.
 - `GET /messages`  
@@ -27,11 +27,23 @@ It demonstrates integration patterns such as **provider abstraction**, **async w
 - **Idempotency:** repeated requests with the same `Idempotency-Key` are processed only once (no duplicates)
 - Console logging on status changes (e.g. `pending → sending → sent/failed`)
 
-### Frontend (React)
+### Client (React)
 - **Home page:** basic navigation
 - **Send page:** form to send a message
-- **Messages page:** list messages + status (manual refresh / optional polling)
-
+- **Messages page:** list messages + status, with auto-refresh (polling).
 ---
 
-## Project Structure (example)
+## Project Structure
+```txt
+client/
+  src/
+    pages/
+    components/
+    services/
+
+server/
+  routes/
+  controllers/
+  services/
+  providers/
+
