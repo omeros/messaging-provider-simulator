@@ -29,30 +29,3 @@ export default function Header() {
 
 
 
-
-
-
-
-// import { NavLink } from "react-router-dom";
-
-// export default function Header() {
-//     const headerContainer = {
-//         padding: 12,
-//         borderBottom: "1px solid #e5e7eb",
-//         marginBottom: 16,
-//     }
-//     const linkBase ={
-//         padding: "8px 12px",
-//         borderRadius: 8,
-//         textDecoration: "none",
-//     }
-//     return (
-//         <header  style={headerContainer} >
-//             <nav style={{ display: "flex", gap: 10, alignItems: "center" }}>
-//                 <NavLink  to="/"  end style={({ isActive }) => ({...linkBase, fontWeight: isActive ? 700 : 400, textDecoration: isActive ? "underline" : "none",})} > Home </NavLink>
-//                 <NavLink  to="/send" style={({ isActive }) => ({...linkBase, fontWeight: isActive ? 700 : 400, textDecoration: isActive ? "underline" : "none",})}> Send</NavLink>
-//                 <NavLink  to="/messages" style={({ isActive }) => ({...linkBase, fontWeight: isActive ? 700 : 400, textDecoration: isActive ? "underline" : "none",})}>Messages-</NavLink>
-//             </nav>
-//         </header>
-//     );
-// }
