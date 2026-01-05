@@ -6,9 +6,7 @@ class FakeProvider {
     }
 
     send({ to, content }) {
-        const delay =
-        this.minDelayMs + Math.floor(Math.random() * (this.maxDelayMs - this.minDelayMs + 1));
-
+        const delay = this.minDelayMs + Math.floor(Math.random() * (this.maxDelayMs - this.minDelayMs + 1));
         return new Promise((resolve, reject) => {
         setTimeout(() => {
             const failed = Math.random() < this.failureRate;
